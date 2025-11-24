@@ -1,0 +1,344 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0d6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(90deg, #88deb0, #4eadaf, #4eadaf, #88deb0);
+    padding: 35px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+}
+
+h1 {
+    color: #140951;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Background Image Section */
+.store-background {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    color: #1a0c69;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.store-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.store-background h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(1, 1, 2, 0.782);
+}
+
+.store-background p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 5px rgba(1, 1, 2, 0.782);
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #69c6af;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #140951;
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.profile-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+nav a:hover, .profile-button:hover {
+    background-color: #555;
+}
+
+/* Responsive for Nav */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+    .profile-button {
+        width: 100%;
+        padding: 12px;
+        text-align: left;
+    }
+}
+
+/* About Me Section */
+#aboutme {
+    padding: 100px;
+    text-align: center;
+}
+
+#aboutme h2 {
+    font-size: 2.5rem;
+    color: rgba(3, 3, 107, 0.782);
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #6cdbeb;
+}
+
+.product-card p {
+    color: #140951;
+    font-size: 0.8rem;
+}
+
+/* Resume Button */
+.resume-button {
+    display: inline-block;
+    background-color: #6cdbeb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #5bb3d1;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #140951;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project-item {
+    background-color: white;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #411d39;
+}
+
+/* Skills Section */
+#skills {
+    padding: 40px;
+    text-align: center;
+}
+
+#skills > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column {
+    text-align: left;
+    max-width: 50%;
+}
+
+.about-us-heading {
+    color: #140951;
+    font-size: 2.5rem;
+}
+
+.owner-staff-heading {
+    color: #4f1433;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    color: #152069;
+}
+
+.inquiry-text {
+    font-size: 0.9rem;
+    color: #5a183b;
+    margin-top: 20px;
+}
+
+.right-column {
+    text-align: right;
+    max-width: 50%;
+}
+
+.right-column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+.right-column li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #f0f0f0; /* Light background for distinction */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #140951;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #140951;
+}
+
+.contact-info a {
+    color: #6cdbeb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #5bb3d1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .products, .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card, .project-item {
+        width: 90%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+    .contact-info {
+        text-align: left;
+        padding: 0 20px;
+    }
+}
